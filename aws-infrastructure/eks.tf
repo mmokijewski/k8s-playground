@@ -14,5 +14,17 @@ module "eks" {
   subnet_ids               = module.vpc.private_subnets
   control_plane_subnet_ids = module.vpc.public_subnets
 
+  eks_managed_node_groups = {
+    node_group = {
+      ami_type       = "AL2023_x86_64_STANDARD"
+      instance_types = ["t3a.medium"]
+      capacity_type  = "SPOT"
+
+      min_size     = 1
+      max_size     = 2
+      desired_size = 1
+    }
+  }
+
   tags = var.tags
 }
