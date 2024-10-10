@@ -1,0 +1,16 @@
+{
+  "name": "k8s-web-to-nginx",
+  "version": "1.0.0",
+  "description": "Simple hello-world application to be used by kubernetes",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.mjs"
+  },
+  "author": "Marek Mokijewski",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0",
+    "node-fetch": "^3.3.2"
+  }
+}
