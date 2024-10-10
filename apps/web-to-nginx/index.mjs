@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/nginx", async (req, res) => {
-  const url = 'http://k8s-custom-nginx'
+  const url = 'http://custom-nginx'
   const response = await fetch(url);
   const body = await response.text();
   res.send(body)

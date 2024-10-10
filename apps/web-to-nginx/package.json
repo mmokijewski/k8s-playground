@@ -1,7 +1,7 @@
 {
-  "name": "k8s-web-to-nginx",
+  "name": "web-to-nginx",
   "version": "1.0.0",
-  "description": "Simple hello-world application to be used by kubernetes",
+  "description": "Simple js application to be used by kubernetes",
   "main": "index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
